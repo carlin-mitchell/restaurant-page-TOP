@@ -1,6 +1,15 @@
 import "./style.css";
-import HelloWorld from "./components/HelloWorld";
+import Footer from "./components/Footer/Footer";
 
-document.body.appendChild(HelloWorld());
+const content = Object.assign(document.createElement("div"), {
+  className: "content",
+});
 
-//hi
+document.body.appendChild(content);
+
+const main = document.createElement("main");
+const header = document.createElement("header");
+
+content.appendChild(header);
+content.appendChild(main);
+content.appendChild(Footer());
