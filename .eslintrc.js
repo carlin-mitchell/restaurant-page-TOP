@@ -1,3 +1,5 @@
+const { javascript } = require("webpack");
+
 module.exports = {
   env: {
     browser: true,
