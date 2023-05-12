@@ -53,12 +53,19 @@ footer {
 
 footer img {
   height: calc(var(--footer-font-size) - 0.2rem);
-  margin-left: var(--marginSpace);
 }
 
 footer a {
   margin-left: var(--marginSpace);
   color: var(--ut-orange);
+}
+
+footer img:hover {
+  scale: 1.2;
+}
+
+footer img:active {
+  scale: 1;
 }
 
 .red {
