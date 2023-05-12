@@ -20,6 +20,9 @@
   "homepage": "https://github.com/carlin-mitchell/restaurant-page-TOP#readme",
   "devDependencies": {
     "css-loader": "^6.7.3",
+    "eslint": "^8.40.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-html": "^7.1.0",
     "html-webpack-plugin": "^5.5.1",
     "style-loader": "^3.3.2",
     "webpack": "^5.82.1",
