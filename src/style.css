@@ -31,7 +31,7 @@ body {
 .content {
   height: 100%;
   display: grid;
-  grid-template-rows: 75px auto 100px;
+  grid-template-rows: 75px auto max-content;
 }
 
 header {
