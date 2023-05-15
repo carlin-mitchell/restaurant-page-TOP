@@ -68,6 +68,10 @@ footer img:active {
   scale: 1;
 }
 
+.copyright-container {
+  margin-bottom: var(--marginSpace);
+}
+
 .red {
   color: red;
 }
