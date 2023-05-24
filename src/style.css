@@ -28,6 +28,10 @@ body {
   font-family: sans-serif;
 }
 
+main {
+  padding: 3rem 15%;
+}
+
 .content {
   height: 100%;
   display: grid;
@@ -74,4 +78,36 @@ footer img:active {
 
 .red {
   color: red;
+}
+
+.view {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--small-br);
+}
+
+.A {
+  background-color: var(--selective-yellow);
+  height: 100%;
+}
+
+.B {
+  background-color: var(--sky-blue);
+  height: 100%;
+}
+
+.C {
+  background-color: var(--ut-orange);
+  height: 100%;
+}
+
+.D {
+  background-color: var(--prussian-blue);
+  height: 100%;
+}
+
+/* UTILITY CLASSES */
+.hidden {
+  visibility: hidden;
 }
