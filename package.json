@@ -8,7 +8,7 @@
     "start": "webpack serve --open",
     "build": "webpack",
     "watch": "webpack --watch",
-    "deploy-demo": "npm run build && git add . && git commit 'deploy-demo' && git push origin main && git push origin :gh-pages && git subtree push --prefix dist origin gh-pages"
+    "deploy-demo": "npm run build && git add . && git commit -m 'deploy-demo' && git push origin main && git push origin :gh-pages && git subtree push --prefix dist origin gh-pages"
   },
   "repository": {
     "type": "git",
