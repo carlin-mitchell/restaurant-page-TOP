@@ -30,6 +30,7 @@ body {
 
 main {
   padding: 3rem 15%;
+  display: grid;
 }
 
 .content {
@@ -39,7 +40,20 @@ main {
 }
 
 header {
+  width: 100%;
   background-color: var(--prussian-blue);
+  display: grid;
+  grid-template-columns: 75%;
+  justify-content: center;
+  align-items: end;
+  padding: 15px;
+}
+
+nav {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
 }
 
 footer {
@@ -85,26 +99,25 @@ footer img:active {
   align-items: center;
   justify-content: center;
   border-radius: var(--small-br);
+  height: 100%;
+  grid-row: 1;
+  grid-column: 1;
 }
 
 .A {
   background-color: var(--selective-yellow);
-  height: 100%;
 }
 
 .B {
-  background-color: var(--sky-blue);
-  height: 100%;
+  background-color: var(--blue-green);
 }
 
 .C {
   background-color: var(--ut-orange);
-  height: 100%;
 }
 
 .D {
   background-color: var(--prussian-blue);
-  height: 100%;
 }
 
 /* UTILITY CLASSES */

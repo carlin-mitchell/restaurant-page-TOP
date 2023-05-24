@@ -1,17 +1,12 @@
-import screen from "../logic/ScreenController";
+import NavButton from "./NavButton";
 
 const Nav = () => {
   const nav = Object.assign(document.createElement("nav"), {});
 
-  const viewABtn = Object.assign(document.createElement("button"), {
-    id: "toggle-view-A",
-    innerText: "View A",
-    onclick: function () {
-      screen.toggleView(this.id);
-    },
-  });
-
-  nav.appendChild(viewABtn);
+  nav.appendChild(NavButton("A"));
+  nav.appendChild(NavButton("B"));
+  nav.appendChild(NavButton("C"));
+  nav.appendChild(NavButton("D"));
 
   return nav;
 };
