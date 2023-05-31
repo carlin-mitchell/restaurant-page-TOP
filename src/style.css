@@ -68,10 +68,11 @@ nav {
   padding: 3px;
   border-radius: var(--small-br) var(--small-br) 0 0;
   cursor: pointer;
+  transition: 0.2s;
 }
 
 .nav-button:active {
-  scale: 0.98;
+  transform: scaleX(0.98);
 }
 
 /* .active-view-btn {
