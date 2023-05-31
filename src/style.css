@@ -56,6 +56,12 @@ nav {
   gap: 15px;
 }
 
+@keyframes nav-button-animation {
+  100% {
+    background-color: var(--sky-blue);
+  }
+}
+
 .nav-button {
   background-color: lightgray;
   text-align: center;
@@ -67,6 +73,10 @@ nav {
 .nav-button:active {
   scale: 0.98;
 }
+
+/* .active-view-btn {
+  background-color: var(--sky-blue);
+} */
 
 footer {
   background-color: var(--prussian-blue);
