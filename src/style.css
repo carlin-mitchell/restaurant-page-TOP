@@ -46,7 +46,7 @@ header {
   grid-template-columns: 75%;
   justify-content: center;
   align-items: end;
-  padding: 15px;
+  /* padding: 15px; */
 }
 
 nav {
@@ -66,7 +66,7 @@ nav {
   background-color: lightgray;
   text-align: center;
   padding: 3px;
-  border-radius: var(--small-br);
+  border-radius: var(--small-br) var(--small-br) 0 0;
   cursor: pointer;
 }
 

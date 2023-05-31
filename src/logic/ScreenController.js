@@ -9,7 +9,7 @@ const ScreenController = (() => {
     const clickedNavButton = document.querySelector(`#${buttonID}`);
     allNavButtons.forEach((button) => (button.style.animation = ""));
 
-    clickedNavButton.style.animation = "nav-button-animation 1s forwards";
+    clickedNavButton.style.animation = "nav-button-animation 0s forwards";
     //display the target view
     const view = document.querySelector("#" + viewID);
     view.classList.remove("hidden");
