@@ -29,7 +29,6 @@ body {
 }
 
 main {
-  padding: 3rem 15%;
   display: grid;
 }
 
@@ -56,9 +55,26 @@ nav {
   gap: 15px;
 }
 
-@keyframes nav-button-animation {
+@keyframes nav-button-animation-A {
   100% {
-    background-color: var(--sky-blue);
+    background-color: var(--selective-yellow);
+  }
+}
+@keyframes nav-button-animation-B {
+  100% {
+    background-color: var(--blue-green);
+  }
+}
+
+@keyframes nav-button-animation-C {
+  100% {
+    background-color: var(--selective-yellow);
+  }
+}
+
+@keyframes nav-button-animation-D {
+  100% {
+    background-color: var(--blue-green);
   }
 }
 
@@ -121,13 +137,36 @@ footer img:active {
   display: grid;
   align-items: center;
   justify-content: center;
-  border-radius: var(--small-br);
   height: 100%;
   grid-row: 1;
   grid-column: 1;
 }
 
-.A {
+@keyframes view-animation-A {
+  100% {
+    background-color: var(--selective-yellow);
+  }
+}
+
+@keyframes view-animation-B {
+  100% {
+    background-color: var(--blue-green);
+  }
+}
+
+@keyframes view-animation-C {
+  100% {
+    background-color: var(--selective-yellow);
+  }
+}
+
+@keyframes view-animation-D {
+  100% {
+    background-color: var(--blue-green);
+  }
+}
+
+/* .A {
   background-color: var(--selective-yellow);
 }
 
@@ -136,12 +175,12 @@ footer img:active {
 }
 
 .C {
-  background-color: var(--ut-orange);
+  background-color: var(--selective-yellow);
 }
 
 .D {
-  background-color: var(--prussian-blue);
-}
+  background-color: var(--blue-green);
+} */
 
 /* UTILITY CLASSES */
 .hidden {
