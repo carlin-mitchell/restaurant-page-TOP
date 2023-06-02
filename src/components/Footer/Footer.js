@@ -20,7 +20,7 @@ const Footer = () => {
   });
 
   const githubLink = Object.assign(document.createElement("a"), {
-    href: "https://github.com/carlin-mitchell/TicTacToe-TOP",
+    href: "https://github.com/carlin-mitchell/restaurant-page-TOP",
   });
 
   const githubIcon = Object.assign(document.createElement("img"), {
