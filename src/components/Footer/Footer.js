@@ -27,11 +27,53 @@ const Footer = () => {
     src: GitHubIcon,
   });
 
+  const attributionsLink = Object.assign(document.createElement("div"), {
+    className: "attributions-link",
+    innerText: `show site attributions`,
+    "data-show-attrs": false,
+    onclick: function () {
+      const attributionsContainer = document.querySelector(
+        ".attributions-container"
+      );
+      if (!this["data-show-attrs"]) {
+        attributionsContainer.classList.remove("removed");
+        this.innerText = "hide site attributions";
+        this["data-show-attrs"] = true;
+      } else {
+        attributionsContainer.classList.add("removed");
+        this.innerText = "show site attributions";
+        this["data-show-attrs"] = false;
+      }
+    },
+  });
+
+  const attributionsContainer = Object.assign(document.createElement("div"), {
+    className: "attributions-container removed",
+  });
+
+  const attributionsList = Object.assign(document.createElement("ul"), {
+    className: "attributions-list",
+  });
+
+  const listItem = Object.assign(document.createElement("li"));
+
+  const bgImageAttributionLink = Object.assign(document.createElement("a"), {
+    innerText: "Background Image By jcomp",
+    href: " https://www.freepik.com/free-photo/buddha-bowl-dish-with-vegetables-legumes-top-view_13807905.htm#query=food&position=13&from_view=search&track=sph",
+  });
+
   githubLink.appendChild(githubIcon);
   copyrightContainer.appendChild(githubLink);
   topContainer.appendChild(topLink);
+
+  listItem.appendChild(bgImageAttributionLink);
+  attributionsList.appendChild(listItem);
+  attributionsContainer.appendChild(attributionsList);
+
   footer.appendChild(copyrightContainer);
   footer.appendChild(topContainer);
+  footer.appendChild(attributionsLink);
+  footer.appendChild(attributionsContainer);
 
   return footer;
 };

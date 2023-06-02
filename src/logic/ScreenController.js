@@ -1,6 +1,6 @@
 const ScreenController = (() => {
   const toggleView = (buttonID) => {
-    const animationTransitionTimeSeconds = (1).toString() + "s";
+    const animationTransitionTimeSeconds = (0).toString() + "s";
     const viewId = `view-${buttonID.split("-").slice(-1)}`;
     const viewIdIdentifier = viewId.split("-")[1];
 

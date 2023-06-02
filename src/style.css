@@ -5,6 +5,14 @@
   --selective-yellow: hsla(43, 100%, 51%, 1);
   --ut-orange: hsla(32, 100%, 49%, 1);
 
+  --sky-blue-o75: hsla(199, 64%, 73%, 0.75);
+  --blue-green-o75: hsla(192, 70%, 43%, 0.75);
+  --prussian-blue-o75: hsla(200, 95%, 14%, 0.75);
+  --selective-yellow-o75: hsla(43, 100%, 51%, 0.75);
+  --ut-orange-o75: hsla(32, 100%, 49%, 0.75);
+
+  --previous-view-bg-clr: none;
+
   --marginSpace: 0.3rem;
   --footer-font-size: 1rem;
 
@@ -26,6 +34,8 @@ body {
 body {
   background-color: var(--sky-blue);
   font-family: sans-serif;
+  background: url("./components/Main/images/main-bg.jpg");
+  background-size: cover;
 }
 
 main {
@@ -40,7 +50,7 @@ main {
 
 header {
   width: 100%;
-  background-color: var(--prussian-blue);
+  background-color: var(--prussian-blue-o75);
   display: grid;
   grid-template-columns: 75%;
   justify-content: center;
@@ -57,29 +67,29 @@ nav {
 
 @keyframes nav-button-animation-A {
   100% {
-    background-color: var(--selective-yellow);
+    background-color: var(--selective-yellow-o75);
   }
 }
 @keyframes nav-button-animation-B {
   100% {
-    background-color: var(--blue-green);
+    background-color: var(--blue-green-o75);
   }
 }
 
 @keyframes nav-button-animation-C {
   100% {
-    background-color: var(--selective-yellow);
+    background-color: var(--selective-yellow-o75);
   }
 }
 
 @keyframes nav-button-animation-D {
   100% {
-    background-color: var(--blue-green);
+    background-color: var(--blue-green-o75);
   }
 }
 
 .nav-button {
-  background-color: lightgray;
+  background-color: rgba(211, 211, 211, 0.75);
   text-align: center;
   padding: 3px;
   border-radius: var(--small-br) var(--small-br) 0 0;
@@ -129,6 +139,25 @@ footer img:active {
   margin-bottom: var(--marginSpace);
 }
 
+.attributions-link {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  text-decoration: underline;
+  cursor: pointer;
+  color: var(--ut-orange);
+}
+
+.attributions-container {
+  text-align: center;
+  font-size: 0.6rem;
+  list-style-type: none;
+}
+
+.attributions-list {
+  margin-top: 10px;
+  list-style-type: none;
+}
+
 .red {
   color: red;
 }
@@ -144,25 +173,25 @@ footer img:active {
 
 @keyframes view-animation-A {
   100% {
-    background-color: var(--selective-yellow);
+    background-color: var(--selective-yellow-o75);
   }
 }
 
 @keyframes view-animation-B {
   100% {
-    background-color: var(--blue-green);
+    background-color: var(--blue-green-o75);
   }
 }
 
 @keyframes view-animation-C {
   100% {
-    background-color: var(--selective-yellow);
+    background-color: var(--selective-yellow-o75);
   }
 }
 
 @keyframes view-animation-D {
   100% {
-    background-color: var(--blue-green);
+    background-color: var(--blue-green-o75);
   }
 }
 
@@ -185,6 +214,10 @@ footer img:active {
 /* UTILITY CLASSES */
 .hidden {
   visibility: hidden;
+}
+
+.removed {
+  display: none;
 }
 
 .un-selectable-text {
