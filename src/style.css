@@ -107,10 +107,9 @@ nav {
 
 footer {
   background-color: var(--prussian-blue);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-items: center;
   color: white;
 
   padding: 20px;
@@ -135,13 +134,7 @@ footer img:active {
   scale: 1;
 }
 
-.copyright-container {
-  margin-bottom: var(--marginSpace);
-}
-
 .attributions-link {
-  margin-top: 10px;
-  font-size: 0.8rem;
   text-decoration: underline;
   cursor: pointer;
   color: var(--ut-orange);
@@ -154,7 +147,6 @@ footer img:active {
 }
 
 .attributions-list {
-  margin-top: 10px;
   list-style-type: none;
 }
 

@@ -62,6 +62,10 @@ const Footer = () => {
     href: " https://www.freepik.com/free-photo/buddha-bowl-dish-with-vegetables-legumes-top-view_13807905.htm#query=food&position=13&from_view=search&track=sph",
   });
 
+  const attributionsLinkAndContainer = Object.assign(
+    document.createElement("div")
+  );
+
   githubLink.appendChild(githubIcon);
   copyrightContainer.appendChild(githubLink);
   topContainer.appendChild(topLink);
@@ -69,11 +73,12 @@ const Footer = () => {
   listItem.appendChild(bgImageAttributionLink);
   attributionsList.appendChild(listItem);
   attributionsContainer.appendChild(attributionsList);
+  attributionsLinkAndContainer.appendChild(attributionsLink);
+  attributionsLinkAndContainer.appendChild(attributionsContainer);
 
   footer.appendChild(copyrightContainer);
   footer.appendChild(topContainer);
-  footer.appendChild(attributionsLink);
-  footer.appendChild(attributionsContainer);
+  footer.appendChild(attributionsLinkAndContainer);
 
   return footer;
 };
