@@ -187,22 +187,6 @@ footer img:active {
   }
 }
 
-/* .A {
-  background-color: var(--selective-yellow);
-}
-
-.B {
-  background-color: var(--blue-green);
-}
-
-.C {
-  background-color: var(--selective-yellow);
-}
-
-.D {
-  background-color: var(--blue-green);
-} */
-
 /* UTILITY CLASSES */
 .hidden {
   visibility: hidden;
