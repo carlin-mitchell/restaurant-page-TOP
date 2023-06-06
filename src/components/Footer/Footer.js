@@ -66,19 +66,19 @@ const Footer = () => {
     document.createElement("div")
   );
 
-  githubLink.appendChild(githubIcon);
+  footer.appendChild(copyrightContainer);
   copyrightContainer.appendChild(githubLink);
+  githubLink.appendChild(githubIcon);
+
+  footer.appendChild(topContainer);
   topContainer.appendChild(topLink);
 
-  listItem.appendChild(bgImageAttributionLink);
-  attributionsList.appendChild(listItem);
-  attributionsContainer.appendChild(attributionsList);
+  footer.appendChild(attributionsLinkAndContainer);
   attributionsLinkAndContainer.appendChild(attributionsLink);
   attributionsLinkAndContainer.appendChild(attributionsContainer);
-
-  footer.appendChild(copyrightContainer);
-  footer.appendChild(topContainer);
-  footer.appendChild(attributionsLinkAndContainer);
+  attributionsContainer.appendChild(attributionsList);
+  attributionsList.appendChild(listItem);
+  listItem.appendChild(bgImageAttributionLink);
 
   return footer;
 };
